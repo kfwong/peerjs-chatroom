@@ -6,5 +6,8 @@
     "immutable": "^4.0.0-rc.12",
     "peerjs": "^0.3.24",
     "water.css": "git+https://github.com/kognise/water.css.git"
+  },
+  "scripts": {
+    "postinstall": "cp node_modules/water.css/dist/dark.css ./ && cp node_modules/peerjs/dist/peerjs.min.js ./ && cp node_modules/immutable/dist/immutable.min.js ./"
   }
 }
