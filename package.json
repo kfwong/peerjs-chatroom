@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "peerjs": "^0.3.24",
+    "water.css": "git+https://github.com/kognise/water.css.git"
+  }
+}
