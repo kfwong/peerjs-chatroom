@@ -246,7 +246,8 @@
     </head>
     <body>
         <div>
-            <h4>PEERJS SAMPLE</h4>
+            <h4>PEERJS CHAT ROOM</h4>
+
             <h4>CONNECTION STATUS</h4>
             <code id="selfId">
                 A MOMENT PLEASE...
@@ -262,31 +263,19 @@
             </button>
             <cite>
                 <small>
-                    <h5>TL;DR</h5>
+                    <h5>DISCONNECTED FROM SIGNALLER?</h5>
                     <p>
-                        Existing peer connections will not be affected.
-                        Reconnect to signaller only if:
+                        Don't panic! Existing peer connections will not be
+                        affected. You can reconnect to signaller again if:
                     </p>
                     <ul>
                         <li>Host wants to accept new peer connections.</li>
                         <li>Client wants to connect to new host.</li>
                     </ul>
-                    <h5>WHY RECONNECT?</h5>
-                    <p>
-                        PeerJS requires an intermediate "signaller" to initiate
-                        connection between two peers. Soon after two peers know
-                        how to reach each other, the signaller waits for a short
-                        time and then disconnect itself. This is to free up
-                        resources.
-                    </p>
-                    <p>
-                        Thus, host and client have to reconnect to signaller to
-                        make themselves discoverable by other peers.
-                    </p>
+                    <p>See the footnote for longer explanation.</p>
                 </small>
             </cite>
 
-            <br />
             <code id="hostId">
                 NOT CONNECTED TO ANYONE
             </code>
@@ -325,6 +314,36 @@
             <button class="full-width" onclick="send()">
                 SEND
             </button>
+
+            <h4>WHY RECONNECT?</h4>
+            <small>
+                <p>
+                    PeerJS requires an intermediate "signaller" to initiate
+                    connection between two peers. Soon after two peers know how
+                    to reach each other, the signaller waits for a short time
+                    and then disconnect itself. This is to free up resources.
+                </p>
+                <p>
+                    Thus, host and client have to reconnect to signaller again
+                    to make themselves discoverable by other peers.
+                </p>
+            </small>
+
+            <h4>ABOUT</h4>
+            <small>
+                <p>A simple peer-to-peer chat room using PeerJS.</p>
+                <p>
+                    This is a sample project to demonstrate P2P connection using
+                    PeerJS and PeerJS Server.
+                </p>
+                <p>
+                    The topology of this application can be classified as a star
+                    network where the hosting-peer facilitates all
+                    communications between client-peer. Note that hosting-peer
+                    is also part of the client-peer so it can participates in
+                    the chat.
+                </p>
+            </small>
         </div>
     </body>
 </html>
