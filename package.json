@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.12",
-    "peerjs": "^0.3.24",
+    "peerjs": "^1.2.0",
     "water.css": "git+https://github.com/kognise/water.css.git"
   },
   "scripts": {
